@@ -1,0 +1,78 @@
+{
+  "name": "path-minifier",
+  "description": "🔥 Minify the path list preserving semantics",
+  "main": "dist/index.js",
+  "type": "module",
+  "license": "MIT",
+  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "bugs": "https://github.com/jill64/path-minifier/issues",
+  "homepage": "https://github.com/jill64/path-minifier#readme",
+  "files": [
+    "dist",
+    "!**/*.test.*",
+    "!**/*.spec.*"
+  ],
+  "exports": {
+    "./types": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jill64/path-minifier.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && npm run package",
+    "preview": "npm run build && vite preview",
+    "prepack": "npm run build",
+    "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
+    "check": "svelte-kit sync && npx svelte-check",
+    "lint": "npm run check && npx eslint .",
+    "format": "npx prettier --write . --plugin prettier-plugin-svelte .",
+    "test": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@jill64/sentry-sveltekit-cloudflare": "1.0.0",
+    "@jill64/svelte-dark-theme": "2.1.0",
+    "@jill64/svelte-input": "1.1.4",
+    "@jill64/svelte-ogp": "0.0.5",
+    "@jill64/svelte-toast": "1.0.2",
+    "@jill64/tailwind-grid-auto": "1.2.0",
+    "@jill64/tailwind-reactions": "1.1.0",
+    "@jill64/typed-storage": "1.0.1",
+    "@playwright/test": "1.39.0",
+    "@sveltejs/adapter-cloudflare": "2.3.3",
+    "@sveltejs/kit": "1.27.5",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
+    "autoprefixer": "10.4.16",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-deprecation": "2.0.0",
+    "eslint-plugin-svelte": "2.35.0",
+    "js-tiktoken": "1.0.7",
+    "postcss": "8.4.31",
+    "postcss-load-config": "4.0.1",
+    "prettier-plugin-svelte": "3.1.0",
+    "svelte": "4.2.3",
+    "svelte-feather-icons": "4.0.1",
+    "svelte-inline-modal": "1.0.0",
+    "svelte-qparam": "0.0.1",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.2.2",
+    "vite": "4.5.0",
+    "vitest": "0.34.6"
+  }
+}
