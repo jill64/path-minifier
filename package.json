@@ -1,6 +1,7 @@
 {
   "name": "path-minifier",
   "description": "🔥 Minify the path list preserving semantics",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
