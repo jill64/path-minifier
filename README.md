@@ -4,7 +4,7 @@
 
 [![npm-version](https://img.shields.io/npm/v/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-license](https://img.shields.io/npm/l/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-download-month](https://img.shields.io/npm/dm/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-min-size](https://img.shields.io/bundlephobia/min/path-minifier)](https://npmjs.com/package/path-minifier) [![ci.yml](https://github.com/jill64/path-minifier/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/path-minifier/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/path-minifier/graph/badge.svg)](https://codecov.io/gh/jill64/path-minifier)
 
-🔥 Minimize the path list while preserving semantics
+🔥 Minify the path list while preserving semantics
 
 ## Installation
 
