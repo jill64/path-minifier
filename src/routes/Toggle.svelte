@@ -16,15 +16,15 @@
       ? 'green'
       : 'limegreen'
     : $theme === 'dark'
-    ? '#444'
-    : 'lightgray'}
+      ? '#444'
+      : 'lightgray'}
   offColor={enable
     ? $theme === 'dark'
       ? 'gray'
       : 'lightgray'
     : $theme === 'dark'
-    ? '#444'
-    : 'lightgray'}
+      ? '#444'
+      : 'lightgray'}
   onChange={param.set}
   disabled={!enable}
 >

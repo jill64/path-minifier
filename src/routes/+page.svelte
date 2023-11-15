@@ -65,12 +65,12 @@
           $pretty ? ($space ? $indent : '\t'.repeat($indent)) : undefined
         )
       : $format === 'auto'
-      ? minify(input_list, {
-          output: 'auto'
-        })
-      : minify(input_list, {
-          output: 'indented-list'
-        }).replaceAll('\t', ($space ? ' ' : '\t').repeat($indent))
+        ? minify(input_list, {
+            output: 'auto'
+          })
+        : minify(input_list, {
+            output: 'indented-list'
+          }).replaceAll('\t', ($space ? ' ' : '\t').repeat($indent))
 
   const enc = encodingForModel('gpt-4')
 
