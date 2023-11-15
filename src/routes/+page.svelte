@@ -4,7 +4,7 @@
   import { ActionButton, Radio } from '@jill64/svelte-input'
   import { toast } from '@jill64/svelte-toast'
   import { typedStorage } from '@jill64/typed-storage'
-  import { encodingForModel } from 'js-tiktoken'
+  import { encodingForModel } from '@jill64/cf-tiktoken'
   import {
     AlignLeftIcon,
     ClipboardIcon,
