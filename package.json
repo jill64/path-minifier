@@ -1,6 +1,6 @@
 {
   "name": "path-minifier",
-  "description": "🔥 Minify the path list preserving semantics",
+  "description": "🔥 Minimize the path list while preserving semantics",
   "version": "0.0.0",
   "main": "dist/index.js",
   "type": "module",
@@ -11,7 +11,9 @@
   "files": [
     "dist",
     "!**/*.test.*",
-    "!**/*.spec.*"
+    "!**/*.spec.*",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "exports": {
     "./types": {
@@ -32,7 +34,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [
+    "list",
+    "minify",
+    "path",
+    "tree"
+  ],
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
