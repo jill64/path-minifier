@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind utilities;
+
+body {
+  @apply m-6 dark:bg-zinc-900 dark:text-zinc-100;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+input {
+  @apply bg-inherit text-inherit;
+}
+
+textarea {
+  @apply w-full h-[50vh] text-zinc-800 dark:text-zinc-200 font-mono overflow-x-auto bg-inherit text-inherit rounded-md p-2 border border-zinc-300 dark:border-zinc-500 resize-none;
+}
+
+button {
+  @apply push-effect dark:pop-effect p-2 rounded-md inline-flex items-center justify-center;
+}
+
+legend {
+  @apply font-semibold mb-2;
+}
