@@ -1,4 +1,17 @@
 <!----- BEGIN GHOST DOCS HEADER ----->
+
+# path-minifier
+
+[![npm-version](https://img.shields.io/npm/v/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-license](https://img.shields.io/npm/l/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-download-month](https://img.shields.io/npm/dm/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-min-size](https://img.shields.io/bundlephobia/min/path-minifier)](https://npmjs.com/package/path-minifier) [![ci.yml](https://github.com/jill64/path-minifier/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/path-minifier/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/path-minifier/graph/badge.svg)](https://codecov.io/gh/jill64/path-minifier)
+
+🔥 Minimize the path list while preserving semantics
+
+## Installation
+
+```sh
+npm i path-minifier
+```
+
 <!----- END GHOST DOCS HEADER ----->
 
 This is a utility to reduce the number of characters in a path listing while maintaining the semantics of the directory structure and file names.
