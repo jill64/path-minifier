@@ -14,6 +14,8 @@ plugins:
   - deprecation
 rules:
   deprecation/deprecation: error
+env:
+  browser: true
 overrides:
   - files:
       - '*.svelte'
