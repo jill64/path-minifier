@@ -8,7 +8,7 @@
   import GitHubLogo from './GitHubLogo.svelte'
 
   const title = 'PathMinifier'
-  const description = 'Minimize the path list while preserving semantics'
+  const description = 'Minify the path list while preserving semantics'
 
   $: dark = $theme === 'dark'
 </script>
