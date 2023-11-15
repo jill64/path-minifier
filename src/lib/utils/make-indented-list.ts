@@ -1,9 +1,6 @@
 import type { Collapsed } from '$lib/types/Collapsed.js'
 
-export const makeIndentedList = (
-  collapsed: Collapsed,
-  indent = 0
-): string => {
+export const makeIndentedList = (collapsed: Collapsed, indent = 0): string => {
   const indent_str = '\t'.repeat(indent)
 
   if (typeof collapsed === 'string') {

@@ -14,12 +14,12 @@ export const postprocess = <O extends Options>(
     output === 'object'
       ? collapsed
       : output === 'json'
-      ? json
-      : output === 'indented-list'
-      ? list
-      : json.length < list.length
-      ? json
-      : list
+        ? json
+        : output === 'indented-list'
+          ? list
+          : json.length < list.length
+            ? json
+            : list
 
   return result as Output<O>
 }

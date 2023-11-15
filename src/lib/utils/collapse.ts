@@ -20,13 +20,13 @@ export const collapse = ({ name, children }: TreeNode): Collapsed => {
             typeof path === 'string'
               ? `${name}/${path}`
               : Array.isArray(path)
-              ? path.map((x) => `${name}/${x}`)
-              : Object.fromEntries(
-                  Object.entries(path).map(([key, value]) => [
-                    `${name}/${key}`,
-                    value
-                  ])
-                )
+                ? path.map((x) => `${name}/${x}`)
+                : Object.fromEntries(
+                    Object.entries(path).map(([key, value]) => [
+                      `${name}/${key}`,
+                      value
+                    ])
+                  )
           )
         )
       : { [name]: folded }

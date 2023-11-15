@@ -6,8 +6,8 @@ const fold = ({ arr, obj }: T, cur: Collapsed): T =>
   Array.isArray(cur)
     ? cur.reduce(fold, { arr, obj })
     : typeof cur === 'string'
-    ? { arr: [...arr, cur], obj }
-    : { arr, obj: { ...obj, ...cur } }
+      ? { arr: [...arr, cur], obj }
+      : { arr, obj: { ...obj, ...cur } }
 
 export const folding = (list: Collapsed[]) => {
   const { arr, obj } = list.reduce(fold, {
@@ -20,8 +20,8 @@ export const folding = (list: Collapsed[]) => {
   return arr.length && obj_keys.length
     ? [...arr, obj]
     : obj_keys.length
-    ? obj
-    : arr.length === 1
-    ? arr[0]
-    : arr
+      ? obj
+      : arr.length === 1
+        ? arr[0]
+        : arr
 }
