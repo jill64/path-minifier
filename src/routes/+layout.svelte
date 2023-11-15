@@ -1,0 +1,59 @@
+<script lang="ts">
+  import { browser } from '$app/environment'
+  import { ThemeManager, flip, theme } from '@jill64/svelte-dark-theme'
+  import { OGP } from '@jill64/svelte-ogp'
+  import { Toaster } from '@jill64/svelte-toast'
+  import { MoonIcon, SunIcon } from 'svelte-feather-icons'
+  import '../app.postcss'
+  import GitHubLogo from './GitHubLogo.svelte'
+
+  const title = 'PathMinifier'
+  const description = 'Minimize the path list while preserving semantics'
+
+  $: dark = $theme === 'dark'
+</script>
+
+<Toaster
+  palette={{
+    background: dark ? '#222' : '#EEE',
+    text: dark ? '#EEE' : '#000',
+    success: dark ? '#157a37' : '#29cf60',
+    error: dark ? '#781e12' : '#cf3d29',
+    secondary: dark ? '#DDD' : '#FFF',
+    loading: dark ? '#555' : '#BBB'
+  }}
+/>
+<ThemeManager />
+<OGP
+  {title}
+  description="🔥 {description}"
+  site_name={title}
+  image="/og-image.png"
+/>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content="🔥 {description}" />
+  {#if browser}
+    <meta data-testid="hydrated" />
+  {/if}
+</svelte:head>
+
+<header class="flex items-center justify-between gap-4">
+  <hgroup class="flex flex-col gap-2">
+    <h1 class="font-[BebasNeue] text-4xl font-bold">🔥 {title}</h1>
+    <p class="text-zinc-600 dark:text-zinc-400">{description}</p>
+  </hgroup>
+  <button class="ml-auto rounded-full" on:click={$flip}>
+    {#if $theme === 'dark'}
+      <SunIcon />
+    {:else}
+      <MoonIcon />
+    {/if}
+  </button>
+  <a href="https://github.com/jill64/path-minifier">
+    <GitHubLogo />
+  </a>
+</header>
+
+<slot />
