@@ -36,8 +36,10 @@
   },
   "keywords": [
     "list",
+    "llm",
     "minify",
     "path",
+    "token",
     "tree"
   ],
   "scripts": {
