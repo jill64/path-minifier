@@ -6,6 +6,8 @@
 
 🔥 Minify the path list while preserving semantics
 
+## [Demo](https://path-minifier.jill64.dev)
+
 ## Installation
 
 ```sh
