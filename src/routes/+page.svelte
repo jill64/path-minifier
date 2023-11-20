@@ -1,10 +1,10 @@
 <script lang="ts">
   import { page } from '$app/stores'
   import { minify } from '$lib/index.js'
+  import { encodingForModel } from '@jill64/cf-tiktoken'
   import { ActionButton, Radio } from '@jill64/svelte-input'
   import { toast } from '@jill64/svelte-toast'
   import { typedStorage } from '@jill64/typed-storage'
-  import { encodingForModel } from '@jill64/cf-tiktoken'
   import {
     AlignLeftIcon,
     ClipboardIcon,
@@ -83,7 +83,7 @@
     <legend>Format</legend>
     <Radio
       list={['auto', 'json', 'list']}
-      value={$format}
+      bind:value={$format}
       onSelect={(x) => {
         if (x === 'json' || x === 'list' || x === 'auto') {
           $format = x
