@@ -81,7 +81,7 @@
     "svelte-inline-modal": "1.0.0",
     "svelte-qparam": "0.0.1",
     "tailwindcss": "3.3.5",
-    "typescript": "5.2.2",
+    "typescript": "5.3.2",
     "vite": "5.0.0",
     "vitest": "0.34.6"
   }
