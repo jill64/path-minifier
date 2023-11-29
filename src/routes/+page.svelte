@@ -13,7 +13,7 @@
     ZapIcon
   } from 'svelte-feather-icons'
   import { define } from 'svelte-qparam'
-  import { boolean, enums } from 'svelte-qparam/converter'
+  import { boolean, enums } from 'svelte-qparam/serde'
   import Diff from './Diff.svelte'
   import Result from './Result.svelte'
   import Toggle from './Toggle.svelte'
@@ -25,8 +25,8 @@
     space: boolean,
     wrap: boolean,
     indent: {
-      stringify: (x) => x.toString(),
-      parse: (x) => {
+      serialize: (x: number) => x.toString(),
+      deserialize: (x: string) => {
         const n = Number(x)
         return isNaN(n) || !isFinite(n) || n < 1 ? 1 : n
       }
