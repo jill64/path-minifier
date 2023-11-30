@@ -3,8 +3,9 @@
   import { minify } from '$lib/index.js'
   import { encodingForModel } from '@jill64/cf-tiktoken'
   import { ActionButton, Radio } from '@jill64/svelte-input'
+  import { storage } from '@jill64/svelte-storage'
+  import { string } from '@jill64/svelte-storage/serde'
   import { toast } from '@jill64/svelte-toast'
-  import { typedStorage } from '@jill64/typed-storage'
   import {
     AlignLeftIcon,
     ClipboardIcon,
@@ -35,18 +36,11 @@
 
   $: ({ qparams } = extract($page.url))
 
-  const stored_input = typedStorage('input', {
-    defaultValue: '',
-    guard: (x): x is string => typeof x === 'string',
-    serializer: {
-      stringify: (x) => x,
-      parse: (x) => x
-    }
-  })
+  const stored_input = storage('input', string)
 
-  let input = stored_input.get()
+  let input = $stored_input
 
-  $: stored_input.set(input)
+  $: $stored_input = input
 
   $: ({ format, pretty, space, indent, wrap } = qparams)
 
