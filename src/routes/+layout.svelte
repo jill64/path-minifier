@@ -1,9 +1,7 @@
 <script lang="ts">
   import { browser } from '$app/environment'
-  import { ThemeManager, flip, theme } from '@jill64/svelte-dark-theme'
-  import { OGP } from '@jill64/svelte-ogp'
-  import { Toaster } from '@jill64/svelte-toast'
-  import { MoonIcon, SunIcon } from 'svelte-feather-icons'
+  import { OGP, ThemeManager, Toaster, flip, theme } from '@jill64/svelte-suite'
+  import { MoonIcon, SunIcon } from '@jill64/svelte-suite/icons'
   import '../app.postcss'
   import GitHubLogo from './GitHubLogo.svelte'
 
