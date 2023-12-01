@@ -2,25 +2,22 @@
   import { page } from '$app/stores'
   import { minify } from '$lib/index.js'
   import { encodingForModel } from '@jill64/cf-tiktoken'
-  import { ActionButton, Radio } from '@jill64/svelte-input'
-  import { storage } from '@jill64/svelte-storage'
-  import { string } from '@jill64/svelte-storage/serde'
-  import { toast } from '@jill64/svelte-toast'
+  import { defineQparam, storage, toast } from '@jill64/svelte-suite'
   import {
     AlignLeftIcon,
     ClipboardIcon,
     CopyIcon,
     XIcon,
     ZapIcon
-  } from 'svelte-feather-icons'
-  import { define } from 'svelte-qparam'
-  import { boolean, enums } from 'svelte-qparam/serde'
+  } from '@jill64/svelte-suite/icons'
+  import { ActionButton, Radio } from '@jill64/svelte-suite/input'
+  import { boolean, enums, string } from '@jill64/svelte-suite/serde'
   import Diff from './Diff.svelte'
   import Result from './Result.svelte'
   import Toggle from './Toggle.svelte'
   import { example } from './example.js'
 
-  const extract = define({
+  const extract = defineQparam({
     format: enums(['auto', 'json', 'list'] as const, 'auto'),
     pretty: boolean,
     space: boolean,
