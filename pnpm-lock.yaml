@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 0.0.14
-    version: 0.0.14(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 0.0.15
+    version: 0.0.15(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 0.0.7
     version: 0.0.7
@@ -725,8 +725,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@0.0.14(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-3aFwHEaT+DLO/26VgNemOToH0Q+NJwqCz0WiNOdZXI3c5gogrZ8jxBrKwsZUS+mPIrTnwqpMFfdPOBA22mFFkA==}
+  /@jill64/svelte-suite@0.0.15(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-elXNmWpyAM9rXsnTI6V2JMOEl/8kYEsMNcxx7QmZosp6KQ0oeH82rk1wmdDQDZYBfP8OjWYfknscbcqal1UQsA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -740,7 +740,7 @@ packages:
       svelte: 4.2.8
       svelte-feather-icons: 4.0.1
       svelte-inline-modal: 1.1.0(svelte@4.2.8)
-      svelte-qparam: 0.1.2(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+      svelte-qparam: 0.1.3(@sveltejs/kit@1.27.7)(svelte@4.2.8)
       ts-serde: 1.0.0
     transitivePeerDependencies:
       - '@sveltejs/kit'
@@ -3473,15 +3473,15 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /svelte-qparam@0.1.2(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-feZqKCfEpmJPsAjyrJpIjBn7O/k1KVlkFBt6f9MdA8maPDcauqvG95m8c7iutTH3Uj1WsqwoM2bYxYbPU+WDjg==}
+  /svelte-qparam@0.1.3(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-n29WBPWrigD7C8V9j9N1gPFPGu6mb6v41t76qTakzawNSXDn1S8AZeU/VizEK2t4IyFbAT5ckTGhx4jXroxGOA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
     dependencies:
       '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.5)
       svelte: 4.2.8
-      typed-qparam: 2.0.2
+      typed-qparam: 2.1.1
     dev: true
 
   /svelte-writable-derived@3.1.0(svelte@4.2.8):
@@ -3675,10 +3675,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typed-qparam@2.0.2:
-    resolution: {integrity: sha512-TGcGbRIAtkMYGJl1Kz+9GRxxi8P8K309dArm1DyWZtceUK0X1Uw8aLUqxYNVXLyaQ4hq3g/IPeTudFVDVixQnQ==}
+  /typed-qparam@2.1.1:
+    resolution: {integrity: sha512-i5iCTEMSFJx5EZjzbT276WdkAVLLgSmCSOrhra9/WvzSDZsu5KSCO6wuei33YxWvgGFB1z7MrwdMhVVovNWF0w==}
     dependencies:
-      ts-serde: 0.4.0
+      ts-serde: 1.0.0
     dev: true
 
   /typescanner@0.5.3:
