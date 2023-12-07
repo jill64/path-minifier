@@ -2,17 +2,11 @@
 
 # path-minifier
 
-[![npm-version](https://img.shields.io/npm/v/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-license](https://img.shields.io/npm/l/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-download-month](https://img.shields.io/npm/dm/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-min-size](https://img.shields.io/bundlephobia/min/path-minifier)](https://npmjs.com/package/path-minifier) [![ci.yml](https://github.com/jill64/path-minifier/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/path-minifier/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/path-minifier/graph/badge.svg)](https://codecov.io/gh/jill64/path-minifier) [![website](https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fpath-minifier.jill64.dev)](https://path-minifier.jill64.dev)
+[![npm-version](https://img.shields.io/npm/v/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-license](https://img.shields.io/npm/l/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-download-month](https://img.shields.io/npm/dm/path-minifier)](https://npmjs.com/package/path-minifier) [![npm-min-size](https://img.shields.io/bundlephobia/min/path-minifier)](https://npmjs.com/package/path-minifier) [![ci.yml](https://github.com/jill64/path-minifier/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/path-minifier/actions/workflows/ci.yml) [![website](https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fpath-minifier.jill64.dev)](https://path-minifier.jill64.dev)
 
 🔥 Minify the path list while preserving semantics
 
 ## [Demo](https://path-minifier.jill64.dev)
-
-## Installation
-
-```sh
-npm i path-minifier
-```
 
 <!----- END GHOST DOCS HEADER ----->
 
