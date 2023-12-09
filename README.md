@@ -13,6 +13,12 @@
 This is a utility to reduce the number of characters in a path listing while maintaining the semantics of the directory structure and file names.
 It was created primarily to reduce the number of tokens used when passing directory information to LLM (e.g. ChatGPT, GPT-4).
 
+## Installation
+
+```sh
+npm i path-minifier
+```
+
 ## Example
 
 Returns a `string` list of paths with reduced size by passing the list of paths as a `string[]`.
