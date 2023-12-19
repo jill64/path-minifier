@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.6.2
     version: 1.6.2(@sveltejs/kit@2.0.3)(svelte@4.2.8)
   '@jill64/svelte-suite':
-    specifier: 1.1.27
-    version: 1.1.27(@sveltejs/kit@2.0.3)(svelte@4.2.8)
+    specifier: 1.1.28
+    version: 1.1.28(@sveltejs/kit@2.0.3)(svelte@4.2.8)
   '@jill64/svelte-tailwind':
     specifier: 1.0.4
     version: 1.0.4
@@ -512,8 +512,8 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /@jill64/svelte-suite@1.1.27(@sveltejs/kit@2.0.3)(svelte@4.2.8):
-    resolution: {integrity: sha512-3i54ljEofHQ2NUGDtJYVBNY0g1nJ3lQfFc0SIJ/sq6lYm8tUQI2D5eKxnehmp2bEBaOUo3WnDjuetG3nyrRRVA==}
+  /@jill64/svelte-suite@1.1.28(@sveltejs/kit@2.0.3)(svelte@4.2.8):
+    resolution: {integrity: sha512-fKtkcTuXa8cHE0hCFuNKsGLhgv/EY0u2s3+VZsK0PksIRUHloPGmuEW2bykK7uqRsw7rhDzuM6Eod2PrIu3zNw==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
@@ -529,7 +529,7 @@ packages:
       svelte: 4.2.8
       svelte-feather-icons: 4.1.0
       svelte-inline-modal: 1.1.3(svelte@4.2.8)
-      svelte-qparam: 1.0.3(@sveltejs/kit@2.0.3)(svelte@4.2.8)
+      svelte-qparam: 1.0.4(@sveltejs/kit@2.0.3)(svelte@4.2.8)
       ts-serde: 1.0.2
     dev: true
 
@@ -3239,15 +3239,15 @@ packages:
       svelte: 4.2.8
     dev: true
 
-  /svelte-qparam@1.0.3(@sveltejs/kit@2.0.3)(svelte@4.2.8):
-    resolution: {integrity: sha512-i10HvHE6pWzgoEkTRnXMWb4sIB2ufW5L9Tf8GffHrkfm4PVcHZGlboaNE+EASCJ7MJzb//OdWWHw9NyFgk3XcA==}
+  /svelte-qparam@1.0.4(@sveltejs/kit@2.0.3)(svelte@4.2.8):
+    resolution: {integrity: sha512-csEio5nQ1ye1ExxKyYRp4ylHG9KqO6RWJ2D/0UNWSQyf/30Li1n3JiOKMgq6mXrt+tA6cuhldV4rVrLp0za7Ug==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
       '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       svelte: 4.2.8
-      typed-qparam: 2.1.3
+      typed-qparam: 2.1.4
     dev: true
 
   /svelte-writable-derived@3.1.0(svelte@4.2.8):
@@ -3394,12 +3394,6 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-serde@1.0.0:
-    resolution: {integrity: sha512-SNjdIkVUqUzfHQ6n+MPDwloWXj7TYYntgJ9xh3Sy0qkrOTJex8Zlz5JkfYkRnPTm1dLvjHJrLbxBmgFY7xJqGg==}
-    dependencies:
-      devalue: 4.3.2
-    dev: true
-
   /ts-serde@1.0.2:
     resolution: {integrity: sha512-b9op5U+ucgRn5fu/SzYBZ/Dp6QBdDVv1eHfBkY1+3Hvew2GyIFrkl3eJs53cFAmHu7XxYgonRHX6qgLpckEujw==}
     dependencies:
@@ -3441,10 +3435,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typed-qparam@2.1.3:
-    resolution: {integrity: sha512-Ba6un+V8+SftYFdMsaJjH/TdQswQ+XFI826dmm8W5W5j0NOo6sZAFMKCygNzwDXqoMV0TbfLwLBfupn9C0yDug==}
+  /typed-qparam@2.1.4:
+    resolution: {integrity: sha512-OvKGMKnWGnwvH0D4c7ZohUJtOO66MGPGVxFWv3iMUOwDR8Grcide1QoY8oLCHENLg00zT2GdznjTSWhqTD5FdA==}
     dependencies:
-      ts-serde: 1.0.0
+      ts-serde: 1.0.2
     dev: true
 
   /typescanner@0.5.3:
