@@ -99,3 +99,11 @@ Automatically selects the output with the fewest number of haracters and returns
 > [!IMPORTANT]
 > The `auto` option selects the output format based on the length of the string, which may not be proportional to the length of the LLM token.
 > See the [interactive demo](https://path-minifier.jill64.dev) for a description of this behavior.
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
