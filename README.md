@@ -2,11 +2,11 @@
 
 # path-minifier
 
-
 <!----- BEGIN GHOST DOCS BADGES ----->
-<a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/npm/v/path-minifier" alt="npm-version" /></a> <a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/npm/l/path-minifier" alt="npm-license" /></a> <a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/npm/dm/path-minifier" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/bundlephobia/min/path-minifier" alt="npm-min-size" /></a> <a href="https://github.com/jill64/path-minifier/actions/workflows/ci.yml"><img src="https://github.com/jill64/path-minifier/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a> <a href="https://path-minifier.jill64.dev"><img src="https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fpath-minifier.jill64.dev" alt="website" /></a>
-<!----- END GHOST DOCS BADGES ----->
 
+<a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/npm/v/path-minifier" alt="npm-version" /></a> <a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/npm/l/path-minifier" alt="npm-license" /></a> <a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/npm/dm/path-minifier" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/path-minifier"><img src="https://img.shields.io/bundlephobia/min/path-minifier" alt="npm-min-size" /></a> <a href="https://github.com/jill64/path-minifier/actions/workflows/ci.yml"><img src="https://github.com/jill64/path-minifier/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a> <a href="https://path-minifier.jill64.dev"><img src="https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fpath-minifier.jill64.dev" alt="website" /></a>
+
+<!----- END GHOST DOCS BADGES ----->
 
 🔥 Minify the path list while preserving semantics
 
@@ -108,6 +108,6 @@ Automatically selects the output with the fewest number of haracters and returns
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <!----- END GHOST DOCS FOOTER ----->
