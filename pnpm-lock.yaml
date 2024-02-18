@@ -21,8 +21,8 @@ devDependencies:
     specifier: 1.7.5
     version: 1.7.5(@sveltejs/kit@2.5.0)(svelte@4.2.11)
   '@jill64/svelte-suite':
-    specifier: 1.1.109
-    version: 1.1.109(@sveltejs/kit@2.5.0)(svelte@4.2.11)
+    specifier: 1.2.2
+    version: 1.2.2(@sveltejs/kit@2.5.0)(svelte@4.2.11)
   '@jill64/svelte-tailwind':
     specifier: 1.0.28
     version: 1.0.28
@@ -417,17 +417,6 @@ packages:
       typescanner: 0.5.3
     dev: true
 
-  /@jill64/svelte-device-theme@1.2.12(@sveltejs/kit@2.5.0)(svelte@4.2.11):
-    resolution: {integrity: sha512-OzgTdDezsmk+3QGP6yTEzppQhZsqSHV4JCqEQyDhbVJ8nFkTql9fDxb5XQb3AEM2QVlZobmcTTZRqq5utivqHQ==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      svelte: 4.2.11
-      svelte-mq-store: 2.2.6(@sveltejs/kit@2.5.0)(svelte@4.2.11)
-    transitivePeerDependencies:
-      - '@sveltejs/kit'
-    dev: true
-
   /@jill64/svelte-device-theme@1.2.13(@sveltejs/kit@2.5.0)(svelte@4.2.11):
     resolution: {integrity: sha512-Q6V+c7gYK+iBD1y5AHHEp3Z+Pzuntk8OvfVs4v61k1ZlaYRGCb/Cn/vYmFg/z1+kygqiX9D7t5T4I48UyEROIQ==}
     peerDependencies:
@@ -449,15 +438,18 @@ packages:
       svelte: 4.2.11
     dev: true
 
-  /@jill64/svelte-i18n@1.0.13(@sveltejs/kit@2.5.0)(svelte@4.2.11):
-    resolution: {integrity: sha512-4fsfQLFPUN/qGjxgziyKi0Vr3K3Ahl50q/JeYkWxCuS/pMy90wIDNMlLnnp2QPHrwwP0G3S/ugyPxK2g/JbDtg==}
+  /@jill64/svelte-i18n@1.1.0(@sveltejs/kit@2.5.0)(svelte@4.2.11):
+    resolution: {integrity: sha512-SBXnEVLrkT/oquJeyamGt4ZLiqotdm8oPyFl58uUE8zHfH4nLVN7Ye+ZzO1zmnfWiC5IrsR3L9fBeHguVzWxkw==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-html': 1.1.7(@sveltejs/kit@2.5.0)(svelte@4.2.11)
+      '@jill64/svelte-storage': 1.1.10(@sveltejs/kit@2.5.0)(svelte@4.2.11)
       '@sveltejs/kit': 2.5.0(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.11)(vite@5.1.3)
+      accept-language: 3.0.18
       svelte: 4.2.11
+      svelte-baked-cookie: 1.0.12(@sveltejs/kit@2.5.0)(svelte@4.2.11)
     dev: true
 
   /@jill64/svelte-input@1.6.13(svelte@4.2.11):
@@ -471,8 +463,8 @@ packages:
       svelte-loading-spinners: 0.3.4
     dev: true
 
-  /@jill64/svelte-menu@1.0.11(svelte@4.2.11):
-    resolution: {integrity: sha512-qJXPdhBsPlTHC7VK8USVvhwL1iZMWiyufTQNN4QYSXhB+2q1Ygi3yCvZbwUBLzQ/GWzyXoz95mPkiESdHHvyNw==}
+  /@jill64/svelte-menu@1.0.12(svelte@4.2.11):
+    resolution: {integrity: sha512-C5bF1Ob1WGPg4lPw7827eSNLCLY8I8O1RIHFm5pfRiVL5DRbfP3MS4NEUw8q6IJ3n9CYrz+tJEmqeSDcutd1+A==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -501,19 +493,19 @@ packages:
       svelte: 4.2.11
     dev: true
 
-  /@jill64/svelte-suite@1.1.109(@sveltejs/kit@2.5.0)(svelte@4.2.11):
-    resolution: {integrity: sha512-7RRdqyKCNfIKLsAfS92bsuaPG1+OLibKyBkjMcP2lKy33UUE8IPuHGtl1Q/0VMiKNYGPNor/B+sxvlvJTEViHg==}
+  /@jill64/svelte-suite@1.2.2(@sveltejs/kit@2.5.0)(svelte@4.2.11):
+    resolution: {integrity: sha512-j5eIdJwIQq89TpczgDOxY79V3t7Y8rgY8v4UplCllWzI4bjWPWpse3mVYKU9UyiSfsDhb6fQIHo3aNffAL3Q9A==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
     dependencies:
       '@jill64/svelte-dark-theme': 2.3.32(@sveltejs/kit@2.5.0)(svelte@4.2.11)
-      '@jill64/svelte-i18n': 1.0.13(@sveltejs/kit@2.5.0)(svelte@4.2.11)
+      '@jill64/svelte-i18n': 1.1.0(@sveltejs/kit@2.5.0)(svelte@4.2.11)
       '@jill64/svelte-input': 1.6.13(svelte@4.2.11)
-      '@jill64/svelte-menu': 1.0.11(svelte@4.2.11)
+      '@jill64/svelte-menu': 1.0.12(svelte@4.2.11)
       '@jill64/svelte-ogp': 1.1.11(@sveltejs/kit@2.5.0)(svelte@4.2.11)
       '@jill64/svelte-storage': 1.1.10(@sveltejs/kit@2.5.0)(svelte@4.2.11)
-      '@jill64/svelte-toast': 1.3.16(@sveltejs/kit@2.5.0)(svelte@4.2.11)
+      '@jill64/svelte-toast': 1.3.18(@sveltejs/kit@2.5.0)(svelte@4.2.11)
       '@sveltejs/kit': 2.5.0(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.11)(vite@5.1.3)
       svelte: 4.2.11
       svelte-feather-icons: 4.1.0
@@ -536,15 +528,15 @@ packages:
       - ts-node
     dev: true
 
-  /@jill64/svelte-toast@1.3.16(@sveltejs/kit@2.5.0)(svelte@4.2.11):
-    resolution: {integrity: sha512-QhfFigLhL8ZC58OXl997ObLTVzpiOgDsVWcrW0vaVIS8Ooy3ugxci0LoBSPOc3De6Ds23WQ2Rjv90Ub7cfPa+w==}
+  /@jill64/svelte-toast@1.3.18(@sveltejs/kit@2.5.0)(svelte@4.2.11):
+    resolution: {integrity: sha512-LigApvyhYKsHQEY0YjzkoJbgAm4aRfL00p4BY/9ZC3KubYEeD9c+acH6h7bXIdjtJBXYore3/v8tX/JKm/L5WQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      '@jill64/svelte-device-theme': 1.2.12(@sveltejs/kit@2.5.0)(svelte@4.2.11)
+      '@jill64/svelte-device-theme': 1.2.13(@sveltejs/kit@2.5.0)(svelte@4.2.11)
       svelte: 4.2.11
       svelte-french-toast: 1.2.0(svelte@4.2.11)
-      svelte-mq-store: 2.2.6(@sveltejs/kit@2.5.0)(svelte@4.2.11)
+      svelte-mq-store: 2.2.7(@sveltejs/kit@2.5.0)(svelte@4.2.11)
     transitivePeerDependencies:
       - '@sveltejs/kit'
     dev: true
@@ -1195,6 +1187,13 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
+  /accept-language@3.0.18:
+    resolution: {integrity: sha512-sUofgqBPzgfcF20sPoBYGQ1IhQLt2LSkxTnlQSuLF3n5gPEqd5AimbvOvHEi0T1kLMiGVqPWzI5a9OteBRth3A==}
+    dependencies:
+      bcp47: 1.1.2
+      stable: 0.1.8
+    dev: true
+
   /acorn-jsx@5.3.2(acorn@8.11.2):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -1303,6 +1302,11 @@ packages:
 
   /base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
+    dev: true
+
+  /bcp47@1.1.2:
+    resolution: {integrity: sha512-JnkkL4GUpOvvanH9AZPX38CxhiLsXMBicBY2IAtqiVN8YulGDQybUydWA4W6yAMtw6iShtw+8HEF6cfrTHU+UQ==}
+    engines: {node: '>=0.10'}
     dev: true
 
   /bignumber.js@9.1.2:
@@ -2686,6 +2690,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /stable@0.1.8:
+    resolution: {integrity: sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==}
+    deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
+    dev: true
+
   /stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
     dev: true
@@ -2808,16 +2817,6 @@ packages:
 
   /svelte-loading-spinners@0.3.4:
     resolution: {integrity: sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==}
-    dev: true
-
-  /svelte-mq-store@2.2.6(@sveltejs/kit@2.5.0)(svelte@4.2.11):
-    resolution: {integrity: sha512-+fZ8lgo97J3LPI6Qk1OY56081pNAidYf5kNw1L6xqzYEaq8J2Frt25JzPSzO8We9q6UwC6czcUb39GWCqDDz7A==}
-    peerDependencies:
-      '@sveltejs/kit': ^2.0.0
-      svelte: ^4.0.0
-    dependencies:
-      '@sveltejs/kit': 2.5.0(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.11)(vite@5.1.3)
-      svelte: 4.2.11
     dev: true
 
   /svelte-mq-store@2.2.7(@sveltejs/kit@2.5.0)(svelte@4.2.11):
