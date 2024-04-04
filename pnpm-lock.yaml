@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@jill64/cf-tiktoken':
-    specifier: 1.0.1
-    version: 1.0.1
+    specifier: 1.0.2
+    version: 1.0.2
   '@jill64/eslint-config-svelte':
     specifier: 1.2.13
     version: 1.2.13(svelte@4.2.12)(typescript@5.4.3)
@@ -836,8 +836,8 @@ packages:
     resolution: {integrity: sha512-IK0NpUnVdxTlZLgc24DmwZk1UsDCz3g8ZvmQVRFBph7cr55wQgpnj8cIrF7rvdFc4u9TR7fGOw0KWhcCRCahJQ==}
     dev: true
 
-  /@jill64/cf-tiktoken@1.0.1:
-    resolution: {integrity: sha512-YFZSu3n/3xvY5K2odI1yLjPKPcTF+WAYdzyF7uw5iePdBwrYDVD02Ewr+h7bvHiPPtzrAWjeTRxAKf8P4pIgrg==}
+  /@jill64/cf-tiktoken@1.0.2:
+    resolution: {integrity: sha512-j56RGwXtOhW3Gp4AOYb0D9TJi5OtDx3h8ZU99oNHWerrbIkhO/iRqRltKGXul8ul6chxmyq2VuuoIfvv+xgSVA==}
     dependencies:
       js-tiktoken: 1.0.10
     dev: true
