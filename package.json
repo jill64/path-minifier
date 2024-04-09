@@ -1,7 +1,7 @@
 {
   "name": "path-minifier",
   "description": "🔥 Minify the path list while preserving semantics",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -64,7 +64,7 @@
     "@jill64/playwright-config": "2.2.5",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.9",
-    "@jill64/svelte-suite": "1.2.92",
+    "@jill64/svelte-suite": "1.2.93",
     "@jill64/svelte-tailwind": "1.2.22",
     "@playwright/test": "1.43.0",
     "@sveltejs/adapter-cloudflare": "4.2.1",
