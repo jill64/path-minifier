@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@jill64/cf-tiktoken':
-    specifier: 1.0.2
-    version: 1.0.2
+    specifier: 1.0.3
+    version: 1.0.3
   '@jill64/eslint-config-svelte':
     specifier: 1.2.19
     version: 1.2.19(svelte@4.2.13)(typescript@5.4.5)
@@ -836,10 +836,10 @@ packages:
     resolution: {integrity: sha512-mO7teUES+oHXGwhQthr8voBi5lEoDrENoT+CtW/WkPRzSUxBY6HhzouHOMqswtabPaZX/5EIzbnpelKU6efEEQ==}
     dev: true
 
-  /@jill64/cf-tiktoken@1.0.2:
-    resolution: {integrity: sha512-j56RGwXtOhW3Gp4AOYb0D9TJi5OtDx3h8ZU99oNHWerrbIkhO/iRqRltKGXul8ul6chxmyq2VuuoIfvv+xgSVA==}
+  /@jill64/cf-tiktoken@1.0.3:
+    resolution: {integrity: sha512-w5NE6GzEKIruQuXfalJDhwtEclwtRmZtS06ATf+ISX8bX+eyUdUesDNahrJJ+bN3fb0pGps6yurtSNObHB/c5g==}
     dependencies:
-      js-tiktoken: 1.0.10
+      js-tiktoken: 1.0.11
     dev: true
 
   /@jill64/eslint-config-svelte@1.2.19(svelte@4.2.13)(typescript@5.4.5):
@@ -2651,8 +2651,8 @@ packages:
     hasBin: true
     dev: true
 
-  /js-tiktoken@1.0.10:
-    resolution: {integrity: sha512-ZoSxbGjvGyMT13x6ACo9ebhDha/0FHdKA+OsQcMOWcm1Zs7r90Rhk5lhERLzji+3rA7EKpXCgwXcM5fF3DMpdA==}
+  /js-tiktoken@1.0.11:
+    resolution: {integrity: sha512-PajXFLq2vx7/8jllQZ43vzNpAai/0MOVdJjW/UrNyJorNQRTjHrqdGJG/mjHVy7h9M6dW6CaG43eNLMYFkTh6w==}
     dependencies:
       base64-js: 1.5.1
     dev: true
