@@ -7,7 +7,7 @@
   "license": "MIT",
   "author": {
     "name": "jill64",
-    "email": "intents.turrets0h@icloud.com",
+    "email": "contact@jill64.dev",
     "url": "https://github.com/jill64",
     "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
@@ -32,7 +32,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/path-minifier.git",
-    "image": "https://opengraph.githubassets.com/7b7e74f532eece58db019e0cc5b44759b25442b455a426a9dfcf0b882d3429a5/jill64/path-minifier"
+    "image": "https://opengraph.githubassets.com/6b210a62aaecb4a7fe5f6500988e883763e91e2ddb0601069b735a185a0d3a2d/jill64/path-minifier"
   },
   "publishConfig": {
     "access": "public"
@@ -71,7 +71,7 @@
     "@sveltejs/kit": "2.5.7",
     "svelte": "4.2.15",
     "typescript": "5.4.5",
-    "vite": "5.2.9",
+    "vite": "5.2.10",
     "vitest": "1.5.0",
     "@sveltejs/vite-plugin-svelte": "3.1.0"
   }
