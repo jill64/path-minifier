@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@jill64/cf-tiktoken':
-        specifier: 1.0.3
-        version: 1.0.3
+        specifier: 1.0.4
+        version: 1.0.4
       '@jill64/eslint-config-svelte':
         specifier: 1.2.27
         version: 1.2.27(svelte@4.2.17)(typescript@5.4.5)
@@ -428,8 +428,8 @@ packages:
   '@jill64/async-observer@1.2.4':
     resolution: {integrity: sha512-mO7teUES+oHXGwhQthr8voBi5lEoDrENoT+CtW/WkPRzSUxBY6HhzouHOMqswtabPaZX/5EIzbnpelKU6efEEQ==}
 
-  '@jill64/cf-tiktoken@1.0.3':
-    resolution: {integrity: sha512-w5NE6GzEKIruQuXfalJDhwtEclwtRmZtS06ATf+ISX8bX+eyUdUesDNahrJJ+bN3fb0pGps6yurtSNObHB/c5g==}
+  '@jill64/cf-tiktoken@1.0.4':
+    resolution: {integrity: sha512-voQJWZxrZK7SynV+7MMMuDTeyt6l1V20UAIz58YXx53nQrUY0YrA3aoknx0QTMLL7+qaKCZPW/+eeRVFvIw8Ig==}
 
   '@jill64/eslint-config-svelte@1.2.27':
     resolution: {integrity: sha512-jn2sNdb9ox6Nw+huOWq/TuBz7Om0rv1gvto7JGmqh5BBA5c+WRVLe2adMwXrgahKa+eXd6tqO9ut1WpeurZb7g==}
@@ -1343,8 +1343,8 @@ packages:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
 
-  js-tiktoken@1.0.11:
-    resolution: {integrity: sha512-PajXFLq2vx7/8jllQZ43vzNpAai/0MOVdJjW/UrNyJorNQRTjHrqdGJG/mjHVy7h9M6dW6CaG43eNLMYFkTh6w==}
+  js-tiktoken@1.0.12:
+    resolution: {integrity: sha512-L7wURW1fH9Qaext0VzaUDpFGVQgjkdE3Dgsy9/+yXyGEpBKnylTd0mU0bfbNkKDlXRb6TEsZkwuflu1B8uQbJQ==}
 
   js-tokens@8.0.3:
     resolution: {integrity: sha512-UfJMcSJc+SEXEl9lH/VLHSZbThQyLpw1vLO1Lb+j4RWDvG3N2f7yj3PVQA3cmkTBNldJ9eFnM+xEXxHIXrYiJw==}
@@ -2396,9 +2396,9 @@ snapshots:
 
   '@jill64/async-observer@1.2.4': {}
 
-  '@jill64/cf-tiktoken@1.0.3':
+  '@jill64/cf-tiktoken@1.0.4':
     dependencies:
-      js-tiktoken: 1.0.11
+      js-tiktoken: 1.0.12
 
   '@jill64/eslint-config-svelte@1.2.27(svelte@4.2.17)(typescript@5.4.5)':
     dependencies:
@@ -3489,7 +3489,7 @@ snapshots:
 
   jiti@1.21.0: {}
 
-  js-tiktoken@1.0.11:
+  js-tiktoken@1.0.12:
     dependencies:
       base64-js: 1.5.1
 
