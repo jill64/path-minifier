@@ -32,7 +32,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/path-minifier.git",
-    "image": "https://opengraph.githubassets.com/54b3aedb2078e5f9e789d7dd7916040fe49185c7391ac0472898b91457de6204/jill64/path-minifier"
+    "image": "https://opengraph.githubassets.com/821fca36ce9562257f51d37b864d6be1d55917a96a5fed124c5930b32dfab688/jill64/path-minifier"
   },
   "publishConfig": {
     "access": "public"
@@ -68,7 +68,7 @@
     "@jill64/svelte-tailwind": "1.2.38",
     "@playwright/test": "1.44.1",
     "@sveltejs/adapter-cloudflare": "4.4.0",
-    "@sveltejs/kit": "2.5.15",
+    "@sveltejs/kit": "2.5.16",
     "svelte": "4.2.18",
     "typescript": "5.4.5",
     "vite": "5.3.1",
