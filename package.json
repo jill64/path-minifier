@@ -1,7 +1,7 @@
 {
   "name": "path-minifier",
   "description": "🔥 Minify the path list while preserving semantics",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -32,7 +32,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/path-minifier.git",
-    "image": "https://opengraph.githubassets.com/d97d79299794bb459b99b8fc55d2ef3ba8689007649da34398368903d4673d9e/jill64/path-minifier"
+    "image": "https://opengraph.githubassets.com/980667632d4f3afdd9b181e266f31d842946e41247e179bb430b86f89aa0e113/jill64/path-minifier"
   },
   "publishConfig": {
     "access": "public"
@@ -61,7 +61,7 @@
   "devDependencies": {
     "@jill64/cf-tiktoken": "1.0.4",
     "@jill64/eslint-config-svelte": "1.2.39",
-    "@jill64/playwright-config": "2.3.1",
+    "@jill64/playwright-config": "2.4.0",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.15",
     "@jill64/svelte-suite": "1.2.194",
