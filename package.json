@@ -32,7 +32,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/path-minifier.git",
-    "image": "https://opengraph.githubassets.com/9cb5124630ffecd314028a9da27eadc4da360e2b319b97919005c37ff1c5c9c8/jill64/path-minifier"
+    "image": "https://opengraph.githubassets.com/fd4bc525a9a0d00e3b380eb753104ad0b0f3dd32f7fdaf85daa60750275d9457/jill64/path-minifier"
   },
   "publishConfig": {
     "access": "public"
