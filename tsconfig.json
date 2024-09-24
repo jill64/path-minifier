@@ -4,6 +4,7 @@
     "allowJs": true,
     "checkJs": true,
     "moduleResolution": "Bundler",
-    "strict": true
+    "strict": true,
+    "skipLibCheck": true
   }
 }
