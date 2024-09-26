@@ -16,7 +16,7 @@ importers:
         version: 1.3.10(svelte@4.2.19)(typescript@5.6.2)
       '@jill64/playwright-config':
         specifier: 2.4.1
-        version: 2.4.1(@playwright/test@1.46.1)
+        version: 2.4.1(@playwright/test@1.47.2)
       '@jill64/prettier-config':
         specifier: 1.0.0
         version: 1.0.0
@@ -30,8 +30,8 @@ importers:
         specifier: 1.2.55
         version: 1.2.55(jiti@1.21.6)(yaml@2.4.5)
       '@playwright/test':
-        specifier: 1.46.1
-        version: 1.46.1
+        specifier: 1.47.2
+        version: 1.47.2
       '@sveltejs/adapter-cloudflare':
         specifier: 4.7.2
         version: 4.7.2(@sveltejs/kit@2.5.25(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(@types/node@20.14.9)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.14.9)))(wrangler@3.63.1(@cloudflare/workers-types@4.20240620.0))
@@ -563,8 +563,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@playwright/test@1.46.1':
-    resolution: {integrity: sha512-Fq6SwLujA/DOIvNC2EL/SojJnkKf/rAwJ//APpJJHRyMi1PdKrY3Az+4XNQ51N4RTbItbIByQ0jgd1tayq1aeA==}
+  '@playwright/test@1.47.2':
+    resolution: {integrity: sha512-jTXRsoSPONAs8Za9QEQdyjFn+0ZQFjCiIztAIF6bi1HqhBzG9Ma7g1WotyiGqFSBRZjIEqMdT8RUlbk1QVhzCQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1630,13 +1630,13 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
 
-  playwright-core@1.46.1:
-    resolution: {integrity: sha512-h9LqIQaAv+CYvWzsZ+h3RsrqCStkBHlgo6/TJlFst3cOTlLghBQlJwPOZKQJTKNaD3QIB7aAVQ+gfWbN3NXB7A==}
+  playwright-core@1.47.2:
+    resolution: {integrity: sha512-3JvMfF+9LJfe16l7AbSmU555PaTl2tPyQsVInqm3id16pdDfvZ8TTZ/pyzmkbDrZTQefyzU7AIHlZqQnxpqHVQ==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.46.1:
-    resolution: {integrity: sha512-oPcr1yqoXLCkgKtD5eNUPLiN40rYEM39odNpIb6VE6S7/15gJmA1NzVv6zJYusV0e7tzvkU/utBFNa/Kpxmwng==}
+  playwright@1.47.2:
+    resolution: {integrity: sha512-nx1cLMmQWqmA3UsnjaaokyoUpdVaaDhJhMoxX2qj3McpjnsqFHs516QAKYhqHAgOP+oCFTEOCOAaD1RgD/RQfA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2460,9 +2460,9 @@ snapshots:
       - ts-node
       - typescript
 
-  '@jill64/playwright-config@2.4.1(@playwright/test@1.46.1)':
+  '@jill64/playwright-config@2.4.1(@playwright/test@1.47.2)':
     dependencies:
-      '@playwright/test': 1.46.1
+      '@playwright/test': 1.47.2
 
   '@jill64/prettier-config@1.0.0': {}
 
@@ -2621,9 +2621,9 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@playwright/test@1.46.1':
+  '@playwright/test@1.47.2':
     dependencies:
-      playwright: 1.46.1
+      playwright: 1.47.2
 
   '@polka/url@1.0.0-next.25': {}
 
@@ -3754,11 +3754,11 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  playwright-core@1.46.1: {}
+  playwright-core@1.47.2: {}
 
-  playwright@1.46.1:
+  playwright@1.47.2:
     dependencies:
-      playwright-core: 1.46.1
+      playwright-core: 1.47.2
     optionalDependencies:
       fsevents: 2.3.2
 
