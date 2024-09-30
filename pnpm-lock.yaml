@@ -27,8 +27,8 @@ importers:
         specifier: 1.2.194
         version: 1.2.194(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(@types/node@20.14.9)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.14.9)))(svelte@4.2.19)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.55
-        version: 1.2.55(jiti@1.21.6)(yaml@2.4.5)
+        specifier: 1.2.63
+        version: 1.2.63(jiti@1.21.6)(yaml@2.4.5)
       '@playwright/test':
         specifier: 1.47.2
         version: 1.47.2
@@ -499,21 +499,21 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  '@jill64/svelte-tailwind@1.2.55':
-    resolution: {integrity: sha512-F6FyIIkrdG9unnGyNH3vMfbX83zm3vV8KEUzGGU3uYlqKiQjYhYvFPKipudP9d7GaJQF2f2Se8/ESoXqf2WKRA==}
+  '@jill64/svelte-tailwind@1.2.63':
+    resolution: {integrity: sha512-7FROKFovQIhKC/On1MbWQRXFi3clVZXEB4xwKj3wozwRFi9bCRlnqO5mSZTsr6mP74xkl2oKolFtdQjQh5ka1g==}
 
   '@jill64/svelte-toast@1.3.44':
     resolution: {integrity: sha512-RufXD/MQnRaTJgRlv0vBh73WG9h4b9e+Luf86lGERC+1nTVVBh8K09hJgd2D7y+7iMZfyxh3p9nj/t625zdJHA==}
     peerDependencies:
       svelte: ^4.0.0
 
-  '@jill64/tailwind-grid-auto@1.3.31':
-    resolution: {integrity: sha512-wtcrPpMcp+UUhxozZJX1wUnseCsNhXK60DJval/Ojgv1uQhJ9XyyCdnpACV/gwhizdi0sH7D9NcnHiPhPgnCCw==}
+  '@jill64/tailwind-grid-auto@1.3.33':
+    resolution: {integrity: sha512-glJj2cvFYnwjXOx0+QbcmyPw9SC1a75B+ec7DxOlVeKXoGF5TvQl2gQE1e7IfrNA/9uyE2ACAgZGQx90oLI3uQ==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
-  '@jill64/tailwind-reactions@1.2.28':
-    resolution: {integrity: sha512-+wNOdy5rO++ESEcIxLJpXPDo+VlBtoiUBA1D29LsvG/ho8AljkYdwRGzGm8ZehkgBO9opIARyFrkxD7RWrinrA==}
+  '@jill64/tailwind-reactions@1.2.30':
+    resolution: {integrity: sha512-gtfCm48+pHQ4ywkturd5GsasbaE2jpAVGxJ2VHAdRKKtZHlb98UHCAxPQRKTyQh1SLDInjuSLrVrPfQG+13ryw==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -1722,10 +1722,6 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.4.41:
-    resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.4.47:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1961,8 +1957,8 @@ packages:
     resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
     engines: {node: '>=16'}
 
-  tailwindcss@3.4.10:
-    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
+  tailwindcss@3.4.13:
+    resolution: {integrity: sha512-KqjHOJKogOUt5Bs752ykCeiwvi0fKVkr5oqsFNt/8px/tA8scFPIlkygsf6jXrfCqGHz7VflA6+yytWuM+XhFw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2548,14 +2544,14 @@ snapshots:
       svelte-qparam: 1.0.27(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(@types/node@20.14.9)))(svelte@4.2.19)(vite@5.4.8(@types/node@20.14.9)))(svelte@4.2.19)
       ts-serde: 1.0.6
 
-  '@jill64/svelte-tailwind@1.2.55(jiti@1.21.6)(yaml@2.4.5)':
+  '@jill64/svelte-tailwind@1.2.63(jiti@1.21.6)(yaml@2.4.5)':
     dependencies:
-      '@jill64/tailwind-grid-auto': 1.3.31(tailwindcss@3.4.10)
-      '@jill64/tailwind-reactions': 1.2.28(tailwindcss@3.4.10)
-      autoprefixer: 10.4.20(postcss@8.4.41)
-      postcss: 8.4.41
-      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.41)(yaml@2.4.5)
-      tailwindcss: 3.4.10
+      '@jill64/tailwind-grid-auto': 1.3.33(tailwindcss@3.4.13)
+      '@jill64/tailwind-reactions': 1.2.30(tailwindcss@3.4.13)
+      autoprefixer: 10.4.20(postcss@8.4.47)
+      postcss: 8.4.47
+      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(yaml@2.4.5)
+      tailwindcss: 3.4.13
     transitivePeerDependencies:
       - jiti
       - ts-node
@@ -2571,13 +2567,13 @@ snapshots:
     transitivePeerDependencies:
       - '@sveltejs/kit'
 
-  '@jill64/tailwind-grid-auto@1.3.31(tailwindcss@3.4.10)':
+  '@jill64/tailwind-grid-auto@1.3.33(tailwindcss@3.4.13)':
     dependencies:
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.13
 
-  '@jill64/tailwind-reactions@1.2.28(tailwindcss@3.4.10)':
+  '@jill64/tailwind-reactions@1.2.30(tailwindcss@3.4.13)':
     dependencies:
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.13
 
   '@jill64/transform@1.0.3': {}
 
@@ -3044,14 +3040,14 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  autoprefixer@10.4.20(postcss@8.4.41):
+  autoprefixer@10.4.20(postcss@8.4.47):
     dependencies:
       browserslist: 4.23.3
       caniuse-lite: 1.0.30001646
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.0
-      postcss: 8.4.41
+      postcss: 8.4.47
       postcss-value-parser: 4.2.0
 
   axobject-query@4.0.0:
@@ -3793,12 +3789,12 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.47
 
-  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.41)(yaml@2.4.5):
+  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.47)(yaml@2.4.5):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 1.21.6
-      postcss: 8.4.41
+      postcss: 8.4.47
       yaml: 2.4.5
 
   postcss-nested@6.0.1(postcss@8.4.47):
@@ -3820,12 +3816,6 @@ snapshots:
       util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
-
-  postcss@8.4.41:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.1.0
-      source-map-js: 1.2.1
 
   postcss@8.4.47:
     dependencies:
@@ -4069,7 +4059,7 @@ snapshots:
       magic-string: 0.30.10
       periscopic: 3.1.0
 
-  tailwindcss@3.4.10:
+  tailwindcss@3.4.13:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
