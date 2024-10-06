@@ -1,7 +1,7 @@
 {
   "name": "path-minifier",
   "description": "🔥 Minify the path list while preserving semantics",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -32,7 +32,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/path-minifier.git",
-    "image": "https://opengraph.githubassets.com/0581f14d7ee0412d639d96490f0eebc57f9c9808d3fd5756d2f732ba571130e2/jill64/path-minifier"
+    "image": "https://opengraph.githubassets.com/f56ceb8a915befbf6ca42a1b853b716f0acb79cd5a8f30119c5ab1b1dc0ec2ee/jill64/path-minifier"
   },
   "publishConfig": {
     "access": "public"
