@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@jill64/cf-tiktoken':
-        specifier: 1.0.6
-        version: 1.0.6
+        specifier: 1.0.7
+        version: 1.0.7
       '@jill64/eslint-config-svelte':
         specifier: 1.3.27
         version: 1.3.27(svelte@4.2.19)(typescript@5.6.2)
@@ -571,8 +571,8 @@ packages:
   '@jill64/async-observer@1.2.5':
     resolution: {integrity: sha512-eaC9F4Fdb2Mll8dSLyraTubG7c0A0DEns3sdHzTt01k+U/zxvV6CM7bAb/bgL2uGw4F1fXGEGCESNtQ+nK49WQ==}
 
-  '@jill64/cf-tiktoken@1.0.6':
-    resolution: {integrity: sha512-/22LuR9Wt+LuQ4s+h1G3u48uKC4m6WL2rkgpIH6JJ+qy68cm0I1tboJxRvkEhyaaZ+29/E8PmuNRz8Kq5ekxoA==}
+  '@jill64/cf-tiktoken@1.0.7':
+    resolution: {integrity: sha512-JyoQK+nkLDi4y4ZwQyem72TlHcKF3OKeb8Clrebb1GdL3vrHLQ41eUegEV63Y/nWTQ2pfCgeVdP1zQ/n9Fug4A==}
 
   '@jill64/eslint-config-svelte@1.3.27':
     resolution: {integrity: sha512-5gisRGOtnat8la29AqpLla6EM5uiJOV4kppFPgs9kRML94Wufetf375uxTv1MyOGePhobO++Qh70+FxjlbLX0g==}
@@ -1550,8 +1550,8 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
-  js-tiktoken@1.0.15:
-    resolution: {integrity: sha512-65ruOWWXDEZHHbAo7EjOcNxOGasQKbL4Fq3jEr2xsCqSsoOo6VVSqzWQb6PRIqypFSDcma4jO90YP0w5X8qVXQ==}
+  js-tiktoken@1.0.16:
+    resolution: {integrity: sha512-nUVdO5k/M9llWpiaZlBBDdtmr6qWXwSD6fgaDu2zM8UP+OXxx9V37lFkI6w0/1IuaDx7WffZ37oYd9KvcWKElg==}
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -2678,9 +2678,9 @@ snapshots:
 
   '@jill64/async-observer@1.2.5': {}
 
-  '@jill64/cf-tiktoken@1.0.6':
+  '@jill64/cf-tiktoken@1.0.7':
     dependencies:
-      js-tiktoken: 1.0.15
+      js-tiktoken: 1.0.16
 
   '@jill64/eslint-config-svelte@1.3.27(svelte@4.2.19)(typescript@5.6.2)':
     dependencies:
@@ -3820,7 +3820,7 @@ snapshots:
 
   jiti@1.21.6: {}
 
-  js-tiktoken@1.0.15:
+  js-tiktoken@1.0.16:
     dependencies:
       base64-js: 1.5.1
 
