@@ -32,8 +32,6 @@
 
   let { qparams: q } = $derived(extract(page.url))
 
-  type QParam = keyof typeof q
-
   const localStorage = storage({ input: string })
 
   let input = $state(localStorage.input)
