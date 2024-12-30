@@ -1,9 +1,5 @@
 lockfileVersion: '9.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -12,13 +8,8 @@ importers:
         specifier: 1.0.7
         version: 1.0.7
       '@jill64/eslint-config-svelte':
-<<<<<<< HEAD
-        specifier: 2.0.1
-        version: 2.0.1(jiti@1.21.6)(svelte@5.16.0)(typescript@5.7.2)
-=======
         specifier: 2.0.2
-        version: 2.0.2(jiti@1.21.6)(svelte@4.2.19)(typescript@5.7.2)
->>>>>>> origin/main
+        version: 2.0.2(jiti@1.21.6)(svelte@5.16.0)(typescript@5.7.2)
       '@jill64/playwright-config':
         specifier: 2.4.2
         version: 2.4.2(@playwright/test@1.49.1)
@@ -746,13 +737,6 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-<<<<<<< HEAD
-=======
-  '@jill64/async-observer@1.2.5':
-    resolution: {integrity: sha512-eaC9F4Fdb2Mll8dSLyraTubG7c0A0DEns3sdHzTt01k+U/zxvV6CM7bAb/bgL2uGw4F1fXGEGCESNtQ+nK49WQ==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-
->>>>>>> origin/main
   '@jill64/cf-tiktoken@1.0.7':
     resolution: {integrity: sha512-JyoQK+nkLDi4y4ZwQyem72TlHcKF3OKeb8Clrebb1GdL3vrHLQ41eUegEV63Y/nWTQ2pfCgeVdP1zQ/n9Fug4A==}
 
@@ -1171,11 +1155,6 @@ packages:
   acorn-walk@8.3.3:
     resolution: {integrity: sha512-MxXdReSRhGO7VlFe1bRG/oI7/mdLV9B9JJT0N8vZOhF7gFRR5l3M8W9G8JxmKV+JC5mGqJ0QvqfSOLsCPa4nUw==}
     engines: {node: '>=0.4.0'}
-
-  acorn@8.12.1:
-    resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
@@ -2868,11 +2847,7 @@ snapshots:
     dependencies:
       js-tiktoken: 1.0.16
 
-<<<<<<< HEAD
-  '@jill64/eslint-config-svelte@2.0.1(jiti@1.21.6)(svelte@5.16.0)(typescript@5.7.2)':
-=======
-  '@jill64/eslint-config-svelte@2.0.2(jiti@1.21.6)(svelte@4.2.19)(typescript@5.7.2)':
->>>>>>> origin/main
+  '@jill64/eslint-config-svelte@2.0.2(jiti@1.21.6)(svelte@5.16.0)(typescript@5.7.2)':
     dependencies:
       '@eslint/js': 9.17.0
       '@types/eslint': 9.6.1
@@ -3360,8 +3335,6 @@ snapshots:
     dependencies:
       acorn: 8.14.0
 
-  acorn@8.12.1: {}
-
   acorn@8.14.0: {}
 
   ajv@6.12.6:
@@ -3454,7 +3427,7 @@ snapshots:
 
   capnp-ts@0.7.0:
     dependencies:
-      debug: 4.3.7
+      debug: 4.4.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - supports-color
