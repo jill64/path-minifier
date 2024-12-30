@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { page } from '$app/stores'
+  import { page } from '$app/state'
   import { minify } from '$lib/index.js'
   import { encodingForModel } from '@jill64/cf-tiktoken'
-  import { defineQparam, storage, toast } from '@jill64/svelte-suite'
+  import { defineQparam, storage, theme, toast } from '@jill64/svelte-suite'
   import {
     AlignLeftIcon,
     ClipboardIcon,
@@ -10,11 +10,10 @@
     XIcon,
     ZapIcon
   } from '@jill64/svelte-suite/icons'
-  import { ActionButton, Radio } from '@jill64/svelte-suite/input'
+  import { ActionButton, Radio, ToggleSwitch } from '@jill64/svelte-suite/input'
   import { boolean, enums, string } from '@jill64/svelte-suite/serde'
   import Diff from './Diff.svelte'
   import Result from './Result.svelte'
-  import Toggle from './Toggle.svelte'
   import { example } from './example.js'
 
   const extract = defineQparam({
@@ -31,42 +30,45 @@
     }
   })
 
-  $: ({ qparams } = extract($page.url))
+  let { qparams: q } = $derived(extract(page.url))
 
-  const stored_input = storage('input', string)
+  const localStorage = storage({ input: string })
 
-  let input = $stored_input
+  let input = $state(localStorage.input)
 
-  $: $stored_input = input
+  $effect(() => {
+    localStorage.input = input
+  })
 
-  $: ({ format, pretty, space, indent, wrap } = qparams)
+  let input_list = $derived(
+    input
+      .split('\n')
+      .map((x) => x.trim())
+      .filter((x) => x !== '')
+  )
 
-  $: input_list = input
-    .split('\n')
-    .map((x) => x.trim())
-    .filter((x) => x !== '')
-
-  $: output =
-    $format === 'json'
+  let output = $derived(
+    q.format === 'json'
       ? JSON.stringify(
           minify(input_list, {
             output: 'object'
           }),
           null,
-          $pretty ? ($space ? $indent : '\t'.repeat($indent)) : undefined
+          q.pretty ? (q.space ? q.indent : '\t'.repeat(q.indent)) : undefined
         )
-      : $format === 'auto'
+      : q.format === 'auto'
         ? minify(input_list, {
             output: 'auto'
           })
         : minify(input_list, {
             output: 'indented-list'
-          }).replaceAll('\t', ($space ? ' ' : '\t').repeat($indent))
+          }).replaceAll('\t', (q.space ? ' ' : '\t').repeat(q.indent))
+  )
 
   const enc = encodingForModel('gpt-4')
 
-  $: input_token = enc.encode(input).length
-  $: output_token = enc.encode(output).length
+  let input_token = $derived(enc.encode(input).length)
+  let output_token = $derived(enc.encode(output).length)
 </script>
 
 <aside class="flex flex-wrap justify-center items-center gap-8 my-4">
@@ -74,29 +76,30 @@
     <legend>Format</legend>
     <Radio
       list={['auto', 'json', 'list']}
-      bind:value={$format}
+      bind:value={q.format}
       onSelect={(x) => {
         if (x === 'json' || x === 'list' || x === 'auto') {
-          $format = x
+          q.format = x
         }
       }}
-      let:item
     >
-      <div class="ml-2 flex gap-2 items-center">
-        {#if item === 'list'}
-          <AlignLeftIcon />
-        {:else if item === 'json'}
-          <span class="font-semibold select-none">{'{ }'}</span>
-        {:else}
-          <ZapIcon />
-        {/if}
-        {item}
-      </div>
+      {#snippet children(item)}
+        <div class="ml-2 flex gap-2 items-center">
+          {#if item === 'list'}
+            <AlignLeftIcon />
+          {:else if item === 'json'}
+            <span class="font-semibold select-none">{'{ }'}</span>
+          {:else}
+            <ZapIcon />
+          {/if}
+          {item}
+        </div>
+      {/snippet}
     </Radio>
   </fieldset>
   <fieldset class="flex items-center justify-center gap-4">
     <legend
-      class={$format === 'auto' || ($format === 'json' && !$pretty)
+      class={q.format === 'auto' || (q.format === 'json' && !q.pretty)
         ? 'text-zinc-500'
         : ''}
     >
@@ -104,32 +107,75 @@
     </legend>
     <Radio
       list={['1', '2', '4']}
-      value={$indent.toString()}
-      disabled={$format === 'auto' || ($format === 'json' && !$pretty)}
+      value={q.indent.toString()}
+      disabled={q.format === 'auto' || (q.format === 'json' && !q.pretty)}
       onSelect={(x) => {
         if (x === '1' || x === '2' || x === '4') {
-          $indent = parseInt(x)
+          q.indent = parseInt(x)
         }
       }}
-      let:item
     >
-      <div
-        class="ml-2 flex gap-2 items-center
-        {$format === 'auto' || ($format === 'json' && !$pretty)
-          ? 'text-zinc-500'
-          : ''}"
-      >
-        {item}
-      </div>
+      {#snippet children(item)}
+        <div
+          class="ml-2 flex gap-2 items-center
+        {q.format === 'auto' || (q.format === 'json' && !q.pretty)
+            ? 'text-zinc-500'
+            : ''}"
+        >
+          {item}
+        </div>
+      {/snippet}
     </Radio>
   </fieldset>
-  <Toggle
-    param={space}
-    label="Use Space"
-    enable={$format === 'list' || ($format === 'json' && $pretty)}
-  />
-  <Toggle param={pretty} label="Pretty" enable={$format === 'json'} />
-  <Toggle param={wrap} label="Wrap" enable={true} />
+  {#snippet Toggle({
+    param,
+    label,
+    enable
+  }: {
+    param: 'space' | 'pretty' | 'wrap'
+    label: string
+    enable: boolean
+  })}
+    <ToggleSwitch
+      value={q[param]}
+      padColor={enable ? 'white' : theme.isDark ? '#BBB' : '#EEE'}
+      onColor={enable
+        ? theme.isDark
+          ? 'green'
+          : 'limegreen'
+        : theme.isDark
+          ? '#444'
+          : 'lightgray'}
+      offColor={enable
+        ? theme.isDark
+          ? 'gray'
+          : 'lightgray'
+        : theme.isDark
+          ? '#444'
+          : 'lightgray'}
+      onChange={(v) => (q[param] = v)}
+      disabled={!enable}
+    >
+      <span
+        class="ml-2 font-semibold {enable
+          ? ''
+          : 'text-zinc-400 dark:text-zinc-500'}"
+      >
+        {label}
+      </span>
+    </ToggleSwitch>
+  {/snippet}
+  {@render Toggle({
+    param: 'space',
+    label: 'Use Space',
+    enable: q.format === 'list' || (q.format === 'json' && q.pretty)
+  })}
+  {@render Toggle({
+    param: 'pretty',
+    label: 'Pretty',
+    enable: q.format === 'json'
+  })}
+  {@render Toggle({ param: 'wrap', label: 'Wrap', enable: true })}
 </aside>
 
 <output class="flex justify-center gap-3 my-3">
@@ -145,7 +191,7 @@
     <ActionButton
       Class="font-bold"
       onClick={() =>
-        $toast.promise(
+        toast.promise(
           navigator.clipboard.readText().then((text) => {
             input = text
           }),
@@ -161,7 +207,7 @@
     </ActionButton>
     <button
       class="flex items-center gap-1"
-      on:click={() => {
+      onclick={() => {
         input = example
       }}
     >
@@ -171,7 +217,7 @@
     <button
       title="Clear"
       class="flex items-center gap-1 ml-auto text-zinc-600 dark:text-zinc-400"
-      on:click={() => {
+      onclick={() => {
         input = ''
       }}
     >
@@ -181,14 +227,14 @@
   <article class="[grid-area:in;]">
     <textarea
       bind:value={input}
-      class={$wrap ? '' : 'whitespace-pre'}
+      class={q.wrap ? '' : 'whitespace-pre'}
       placeholder="foo.txt
 bar.json
 path/baz.txt
 path/to/qux.txt
 path/to/file/quux.txt
 ..."
-    />
+    ></textarea>
     <Result tokens={input_token} text={input} />
   </article>
   <hgroup class="flex items-center self-start gap-2 [grid-area:out-head;]">
@@ -196,7 +242,7 @@ path/to/file/quux.txt
     <ActionButton
       Class="font-bold"
       onClick={() =>
-        $toast.promise(navigator.clipboard.writeText(output), {
+        toast.promise(navigator.clipboard.writeText(output), {
           loading: 'Copying...',
           success: 'Copied',
           error: 'Failed to copy'
@@ -207,7 +253,8 @@ path/to/file/quux.txt
     </ActionButton>
   </hgroup>
   <output class="[grid-area:out;]">
-    <textarea class={$wrap ? '' : 'whitespace-pre'} value={output} readonly />
+    <textarea class={q.wrap ? '' : 'whitespace-pre'} value={output} readonly
+    ></textarea>
     <Result tokens={output_token} text={output} />
   </output>
 </main>

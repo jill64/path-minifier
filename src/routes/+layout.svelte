@@ -5,10 +5,12 @@
   import '../app.postcss'
   import GitHubLogo from './GitHubLogo.svelte'
 
+  let { children } = $props()
+
   const title = 'PathMinifier'
   const description = 'Minify the path list while preserving semantics'
 
-  $: dark = $theme === 'dark'
+  let dark = $derived(theme.isDark)
 </script>
 
 <Toaster
@@ -42,8 +44,8 @@
     <h1 class="font-[BebasNeue] text-4xl font-bold">🔥 {title}</h1>
     <p class="text-zinc-600 dark:text-zinc-400">{description}</p>
   </hgroup>
-  <button class="ml-auto rounded-full" on:click={$flip}>
-    {#if $theme === 'dark'}
+  <button class="ml-auto rounded-full" onclick={flip.theme}>
+    {#if dark}
       <SunIcon />
     {:else}
       <MoonIcon />
@@ -54,4 +56,4 @@
   </a>
 </header>
 
-<slot />
+{@render children()}
