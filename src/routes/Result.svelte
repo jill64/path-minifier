@@ -1,6 +1,11 @@
 <script lang="ts">
-  export let tokens: number
-  export let text: string
+  let {
+    tokens,
+    text
+  }: {
+    tokens: number
+    text: string
+  } = $props()
 </script>
 
 <div class="flex gap-3">

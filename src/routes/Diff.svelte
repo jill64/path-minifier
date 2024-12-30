@@ -1,12 +1,18 @@
 <script lang="ts">
-  export let before: number
-  export let after: number
-  export let label: string
+  let {
+    before,
+    after,
+    label
+  }: {
+    before: number
+    after: number
+    label: string
+  } = $props()
 
   const fix = (n: number) => (isNaN(n) || !isFinite(n) ? 0 : n)
 
-  $: diff = after - before
-  $: rate = fix((after / before - 1) * 100)
+  let diff = $derived(after - before)
+  let rate = $derived(fix((after / before - 1) * 100))
 </script>
 
 <span>
