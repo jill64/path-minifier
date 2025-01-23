@@ -27,8 +27,8 @@ importers:
         specifier: 2.0.9
         version: 2.0.9(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.0)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.0)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.0)
       '@jill64/svelte-tailwind':
-        specifier: 1.2.77
-        version: 1.2.77(jiti@1.21.7)(yaml@2.7.0)
+        specifier: 1.2.79
+        version: 1.2.79(jiti@1.21.7)(yaml@2.7.0)
       '@playwright/test':
         specifier: 1.49.1
         version: 1.49.1
@@ -536,8 +536,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^5.0.0
 
-  '@jill64/svelte-tailwind@1.2.77':
-    resolution: {integrity: sha512-AequFXGj3nSi+dCdwYKT9AHtucGuWsrlTcSq+Ek9VXM4vbnp+RLAiTaKyvFd+mb3GKZYTpQ+698Z+1AQXThs4A==}
+  '@jill64/svelte-tailwind@1.2.79':
+    resolution: {integrity: sha512-IRYlGEsyVQa69QYnmN6aivPb84QtrphOi2m4Yn0thWiV9GAvYmwxKcLwL/U6g4A4ldSVYBbtIA5Hvyv1a+Xumw==}
 
   '@jill64/svelte-toast@2.1.5':
     resolution: {integrity: sha512-9Xk49WjzqkTaZPVdZNjecd+eqdzcPElitYLQSJvgSwNOKndtV05mC3vW3Gpj4wHBlmf1qBXh9Q7fug71X69IRQ==}
@@ -549,8 +549,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.0.0
 
-  '@jill64/tailwind-reactions@1.3.1':
-    resolution: {integrity: sha512-TbNw/ScdG0NwjI6MuQ8ePcGhFQRrB03vaWq8DEprvxD/oj3kAmiSRq4HrLz3HY091QGfUD8EIBfq8Ouy3kbyzA==}
+  '@jill64/tailwind-reactions@1.3.2':
+    resolution: {integrity: sha512-qX0iOIhYuCpmn0EONvZKQXtz++Ne5XhJ6ZmPTlMmC+d8N/RGrIG1OyBDaEmq/qKZ9B9ppWqvQDmwDO5zyQiE9Q==}
     peerDependencies:
       tailwindcss: ^3.0.0
 
@@ -2461,10 +2461,10 @@ snapshots:
       svelte-qparam: 2.1.1(@sveltejs/kit@2.16.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.0)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.0)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.0)
       ts-serde: 1.0.8
 
-  '@jill64/svelte-tailwind@1.2.77(jiti@1.21.7)(yaml@2.7.0)':
+  '@jill64/svelte-tailwind@1.2.79(jiti@1.21.7)(yaml@2.7.0)':
     dependencies:
       '@jill64/tailwind-grid-auto': 1.4.1(tailwindcss@3.4.17)
-      '@jill64/tailwind-reactions': 1.3.1(tailwindcss@3.4.17)
+      '@jill64/tailwind-reactions': 1.3.2(tailwindcss@3.4.17)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.1)(yaml@2.7.0)
@@ -2488,7 +2488,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.17
 
-  '@jill64/tailwind-reactions@1.3.1(tailwindcss@3.4.17)':
+  '@jill64/tailwind-reactions@1.3.2(tailwindcss@3.4.17)':
     dependencies:
       tailwindcss: 3.4.17
 
