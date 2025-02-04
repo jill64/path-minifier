@@ -32,7 +32,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/path-minifier.git",
-    "image": "https://opengraph.githubassets.com/b000825cdf3e0ea9d6c8ce8421286a42b281187de9bd45d922f8f14af774defd/jill64/path-minifier"
+    "image": "https://opengraph.githubassets.com/a7c6416560ad6d3e939f182317ee20e02798a87d313e8f8afac296242fb39fb9/jill64/path-minifier"
   },
   "publishConfig": {
     "access": "public"
@@ -62,7 +62,7 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/cf-tiktoken": "1.0.8",
-    "@jill64/eslint-config-svelte": "2.0.6",
+    "@jill64/eslint-config-svelte": "2.0.7",
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
